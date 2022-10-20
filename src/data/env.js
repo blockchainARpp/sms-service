@@ -1,0 +1,13 @@
+const env = process.env;
+
+module.exports = {
+    GLS_SMS_GATE_HOST: env.GLS_SMS_GATE_HOST || '0.0.0.0',
+    GLS_SMS_GATE_PORT: Number(env.GLS_SMS_GATE_PORT) || 8090,
+
+    GLS_TWILIO_PHONE_FROM: env.GLS_TWILIO_PHONE_FROM,
+
+    TWILIO_ACCOUNT_SID: env.TWILIO_ACCOUNT_SID,
+    TWILIO_AUTH_TOKEN: env.TWILIO_AUTH_TOKEN,
+
+    GLS_SMSC_SENDER_NAME: env.GLS_SMSC_SENDER_NAME || 'Commun.com',
+};
